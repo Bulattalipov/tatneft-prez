@@ -1,0 +1,18 @@
+.rules
+  .site-container
+    button.rules__return
+      +icon-mono('arrow-right')(class='rules__return-icon')
+      .rules__return-text назад
+    .rules__title Видео о ключевых правилах безопасности
+    ul.rules__items
+      each item in Array.from(Array(9).keys())
+        li.rules__item
+          img.rules__item-img(src='assets/images/rules_img.jpg' alt='#')
+          h3.rules__item-title Ключевые правила безопасности
+          .rules__item-buttons
+            button.rules__item-button
+              .rules__item-button-text Видео
+              +icon-mono('arrow-left-2')(class='rules__item-button-icon')
+            button.rules__item-button
+              .rules__item-button-text плакат
+              +icon-mono('arrow-left-2')(class='rules__item-button-icon')

@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("Inter_18pt-Regular"),
+    url("../fonts/Inter_18pt-Regular.woff2") format("woff2"),
+    url("../fonts/Inter_18pt-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 500; /* Medium */
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("Inter_18pt-Medium"),
+    url("../fonts/Inter_18pt-Medium.woff2") format("woff2"),
+    url("../fonts/Inter_18pt-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("Inter_18pt-SemiBold"),
+    url("../fonts/Inter_18pt-SemiBold.woff2") format("woff2"),
+    url("../fonts/Inter_18pt-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pragmatica";
+  font-weight: 700; /* Bold */
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("Pragmatica-Bold"),
+    url("../fonts/Pragmatica-Bold.woff2") format("woff2"),
+    url("../fonts/Pragmatica-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pragmatica Cond";
+  font-weight: 700; /* Bold */
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("PragmaticaCond-Bold"),
+    url("../fonts/PragmaticaCond-Bold.woff2") format("woff2"),
+    url("../fonts/PragmaticaCond-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pragmatica";
+  font-weight: 500; /* Medium */
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("Pragmatica-Medium"),
+    url("../fonts/Pragmatica-Medium.woff2") format("woff2"),
+    url("../fonts/Pragmatica-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pragmatica";
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("Pragmatica-Regular"),
+    url("../fonts/Pragmatica-Regular.woff2") format("woff2"),
+    url("../fonts/Pragmatica-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("SFProText-Regular"),
+    url("../fonts/SFProText-Regular.woff2") format("woff2"),
+    url("../fonts/SFProText-Regular.woff") format("woff");
+}

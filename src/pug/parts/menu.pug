@@ -1,0 +1,7 @@
+.menu
+  nav.nav
+    ul.nav__list
+      for item in navLinks
+        li.nav__item
+          a.nav__link(href=item.link)= item.title
+  a.header__telephone-link(href="tel:+78009999999") +7 (800) 999-99-99

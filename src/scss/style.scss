@@ -1,0 +1,26 @@
+/* stylelint-disable no-invalid-position-at-import-rule */
+:root {
+  --index: calc(1vw);
+  /* typography  */
+  --font-family: "Pragmatica", sans-serif;
+  --second-family: "Inter", sans-serif;
+  --third-family: "SF Pro Text", sans-serif;
+  --font3: "Pragmatica Cond", sans-serif;
+
+  /* colors */
+  --color-dark: #000;
+  --color-bg: #4b9bb2;
+  --color-white: #fff;
+  --color-grey: #6c6f75;
+  --color-blue: #2f5dd3;
+  --font-body: 400 1.6rem/1.2 var(--font-family);
+
+  /* etc */
+  --transition: 200ms ease-in;
+}
+
+@import "./helpers/**/*";
+@import "./vendor/**/*";
+@import "./settings/**/*";
+@import "./UI/**/*";
+@import "./pages/**/*";

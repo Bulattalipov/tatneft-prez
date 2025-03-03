@@ -1,0 +1,59 @@
+.intro {
+  padding: 5.3rem 0 6.6rem;
+  min-height: 100vh;
+
+  &__inner {
+    max-width: 84rem;
+  }
+
+  &__logo {
+    margin-bottom: 12.3rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 5.6rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10rem;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    font-weight: 500;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 16.3rem;
+
+    span {
+      background: #fff;
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      color: #4b9bb2;
+    }
+  }
+
+  &__button {
+    border-radius: 10rem;
+    padding: 3.2rem 2.4rem;
+    background: #fff;
+    font-weight: 500;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: #4b9bb2;
+    margin-bottom: 7.2rem;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 10.6rem;
+
+    &-close {
+      font-size: 2rem;
+      text-transform: lowercase;
+    }
+  }
+}

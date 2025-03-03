@@ -1,0 +1,23 @@
+-
+  navLinks = [
+    {title: "Пункт 1", link: "#"},
+    {title: "Пункт 2", link: "#"},
+    {title: "Пункт 3", link: "#"},
+    {title: "Пункт 4", link: "#"},
+  ]
+
+header.header
+  .site-container
+    .header__wrapper
+      a.header__logo(href="/")
+        img.header__logo-img(src="assets/images/logo.svg" alt="Logo")
+      nav.nav.header__nav
+        ul.nav__list
+          for item in navLinks
+            li.nav__item
+              a.nav__link(href=item.link)= item.title
+      a.header__telephone-link(href="tel:+78009999999") +7 (800) 999-99-99
+      button.header__burger
+        span
+        span
+        span
