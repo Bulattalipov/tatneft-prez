@@ -57,6 +57,25 @@
     text-transform: uppercase;
     color: #4b9bb2;
     margin-bottom: 7.2rem;
+    transition: box-shadow var(--transition), color var(--transition), background var(--transition);
+
+    &:hover {
+      box-shadow: 0 0 5px 0 #fff;
+      color: #62b0c6;
+    }
+
+    &:active,
+    &:focus {
+      background: #d2e7ed;
+      color: #4b9bb2;
+      box-shadow: none;
+    }
+
+    &[disabled=''] {
+      background: #c9cdd2;
+      color: #fff;
+      box-shadow: none;
+    }
   }
 
   &__box {

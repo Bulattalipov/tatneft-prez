@@ -20,10 +20,10 @@ export default function () {
     speed: 500,
     slidesPerView: 1,
     spaceBetween: 30,
-    // autoplay: {
-    //   delay: 2500, // Задержка между слайдами в миллисекундах
-    //   disableOnInteraction: false, // Не отключать автопроигрывание при взаимодействии
-    // },
+    autoplay: {
+      delay: 2500, // Задержка между слайдами в миллисекундах
+      disableOnInteraction: false, // Не отключать автопроигрывание при взаимодействии
+    },
     // autoHeight: true,
   });
 }
