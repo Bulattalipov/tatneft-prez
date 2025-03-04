@@ -8,12 +8,12 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: calc(var(--index) * 0.3);
   line-height: 1.2;
 
-  @include mq('custom', max, 411) {
-    font-size: calc(var(--index) * 2);
-  }
+  // @include mq('custom', max, 411) {
+  //   font-size: calc(var(--index) * 2);
+  // }
 }
 
 body {

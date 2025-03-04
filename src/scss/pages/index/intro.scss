@@ -1,12 +1,19 @@
 .intro {
+  position: relative;
   padding: 5.3rem 0 6.6rem;
-  min-height: 100vh;
+  height: 100vh;
+  background-color: var(--color-bg);
+  overflow-y: scroll;
 
   &__inner {
+    position: relative;
+    z-index: 1;
     max-width: 84rem;
   }
 
   &__logo {
+    width: 32.3rem;
+    height: 8.8rem;
     margin-bottom: 12.3rem;
   }
 
@@ -27,11 +34,17 @@
     color: #fff;
     margin-bottom: 16.3rem;
 
+    & > * {
+      font-size: 3.2rem;
+    }
+
     span {
       background: #fff;
       font-size: 3.2rem;
       text-transform: uppercase;
       color: #4b9bb2;
+      padding: 0.2rem 0.8rem;
+      margin: 0.5rem;
     }
   }
 
@@ -51,9 +64,41 @@
     align-items: center;
     gap: 10.6rem;
 
+    &-sound {
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
+    }
+
     &-close {
       font-size: 2rem;
       text-transform: lowercase;
+    }
+  }
+
+  &__slider {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    width: 100rem;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    &-item {
+      height: 100%;
+      width: 90rem;
+      display: flex;
+      justify-content: flex-end;
+
+      &-img {
+        mask-image: url('../images/Polygon.svg');
+        mask-repeat: no-repeat;
+        mask-size: auto 180%;
+        mask-position: left 40%;
+        object-fit: cover;
+      }
     }
   }
 }
