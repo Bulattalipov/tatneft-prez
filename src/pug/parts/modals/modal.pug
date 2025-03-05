@@ -1,4 +1,4 @@
-.modal__container(data-target="modal")
+.modal__container(data-target="modal-images")
   .modal__content
     button.button-reset.modal__close-btn.modal-close(type="button")
       +icon-mono('modal-close')
@@ -14,6 +14,26 @@
           .modal__slider-item.swiper-slide
             .modal__slider-item-title Ключевые правила безопасности
             img.modal__slider-item-img(src='assets/images/rules_img.jpg' alt='')
+        .swiper-nav
+          button.swiper-nav__btn.swiper-nav__btn-prev
+            +icon-mono('slider-arrow-left')
+          button.swiper-nav__btn.swiper-nav__btn-next
+            +icon-mono('slider-arrow-left')
+.modal__container(data-target="modal-video")
+  .modal__content
+    button.button-reset.modal__close-btn.modal-close(type="button")
+      +icon-mono('modal-close')
+    .modal__legend
+      .modal__slider.swiper
+        .swiper-wrapper
+          .modal__slider-item.swiper-slide
+            .modal__slider-item-title Ключевые правила безопасности
+            video.modal__slider-item-video(autoplay muted)
+              source(src='assets/flowers.mp4')
+          .modal__slider-item.swiper-slide
+            .modal__slider-item-title Ключевые правила безопасности
+            video.modal__slider-item-video(autoplay muted)
+              source(src='assets/flowers.mp4')
         .swiper-nav
           button.swiper-nav__btn.swiper-nav__btn-prev
             +icon-mono('slider-arrow-left')

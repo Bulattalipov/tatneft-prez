@@ -87,6 +87,13 @@
         border-radius: 2.4rem;
       }
 
+      &-video {
+        object-fit: cover;
+        height: 86%;
+        border: 1px solid #fff;
+        border-radius: 2.4rem;
+      }
+
       &-title {
         font-weight: 500;
         font-size: 3rem;
@@ -102,6 +109,9 @@
       &.swiper-slide-active {
         width: 100%;
         .modal__slider-item-img {
+          width: 100%;
+        }
+        .modal__slider-item-video {
           width: 100%;
         }
       }
