@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="Описание сайта">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>Главная | Название сайта</title>
@@ -34,7 +34,11 @@
               </div>
               <button class="intro__button">изучить ключевые правила безопасности</button>
               <div class="intro__box">
-                <img class="intro__box-sound" src="assets/images/Simplification.svg" alt="Звук">
+                <div class="intro__box-sound">
+                  <img class="intro__box-sound-img intro__box-sound-img-1" src="assets/images/Simplification.svg" alt="Звук">
+                  <img class="intro__box-sound-img intro__box-sound-img-2" src="assets/images/Simplification2.svg" alt="Звук">
+                </div>
+                <audio class="intro__box-audio" src="assets/cosmos.mp3" loop></audio>
                 <button class="intro__box-close">ЗАКРЫТЬ</button>
               </div>
             </div>
@@ -233,18 +237,38 @@
     <div class="modal">
       <div class="modal__container" data-target="modal">
         <div class="modal__content">
-          <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
+          <button class="button-reset modal__close-btn modal-close" type="button">
+            <svg class="icon icon-modal-close">
+              <use xlink:href="assets/images/sprites/sprite-mono.svg#modal-close"></use>
+            </svg>
           </button>
           <div class="modal__legend">
             <div class="modal__slider swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">text 1</div>
-                <div class="swiper-slide">text 2</div>
-                <div class="swiper-slide">text 3</div>
+                <div class="modal__slider-item swiper-slide">
+                  <div class="modal__slider-item-title">Ключевые правила безопасности</div>
+                  <img class="modal__slider-item-img" src="assets/images/rules_img.jpg" alt="">
+                </div>
+                <div class="modal__slider-item swiper-slide">
+                  <div class="modal__slider-item-title">Ключевые правила безопасности</div>
+                  <img class="modal__slider-item-img" src="assets/images/rules_img.jpg" alt="">
+                </div>
+                <div class="modal__slider-item swiper-slide">
+                  <div class="modal__slider-item-title">Ключевые правила безопасности</div>
+                  <img class="modal__slider-item-img" src="assets/images/rules_img.jpg" alt="">
+                </div>
               </div>
               <div class="swiper-nav">
-                <div class="swiper-nav__btn swiper-nav__btn-prev">На лево</div>
-                <div class="swiper-nav__btn swiper-nav__btn-next">На право</div>
+                <button class="swiper-nav__btn swiper-nav__btn-prev">
+                  <svg class="icon icon-slider-arrow-left">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#slider-arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="swiper-nav__btn swiper-nav__btn-next">
+                  <svg class="icon icon-slider-arrow-left">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#slider-arrow-left"></use>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
