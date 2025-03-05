@@ -9,7 +9,10 @@
         .intro__text-three и своему #[span здоровью!]
       button.intro__button изучить ключевые правила безопасности
       .intro__box
-        img.intro__box-sound(src='assets/images/Simplification.svg' alt='Звук')
+        .intro__box-sound
+          img.intro__box-sound-img.intro__box-sound-img-1(src='assets/images/Simplification.svg' alt='Звук')
+          img.intro__box-sound-img.intro__box-sound-img-2(src='assets/images/Simplification2.svg' alt='Звук')
+        audio(class="intro__box-audio")(src="assets/cosmos.mp3" loop)
         button.intro__box-close ЗАКРЫТЬ
   .intro__slider.swiper
     .swiper-wrapper

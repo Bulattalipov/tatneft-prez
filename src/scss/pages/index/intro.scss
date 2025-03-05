@@ -84,9 +84,26 @@
     gap: 10.6rem;
 
     &-sound {
-      width: 3rem;
-      height: 3rem;
-      cursor: pointer;
+
+      &-img {
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+
+        &-2 {
+          display: none;
+        }
+      }
+
+      &--dull {
+        .intro__box-sound-img-1 {
+          display: none;
+        }
+
+        .intro__box-sound-img-2 {
+          display: block;
+        }
+      }
     }
 
     &-close {

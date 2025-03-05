@@ -1,14 +1,21 @@
 .modal__container(data-target="modal")
   .modal__content
     button.button-reset.modal__close-btn.modal-close(type="button")
-      span
-      span
+      +icon-mono('modal-close')
     .modal__legend
       .modal__slider.swiper
         .swiper-wrapper
-          .swiper-slide text 1
-          .swiper-slide text 2
-          .swiper-slide text 3
+          .modal__slider-item.swiper-slide
+            .modal__slider-item-title Ключевые правила безопасности
+            img.modal__slider-item-img(src='assets/images/rules_img.jpg' alt='')
+          .modal__slider-item.swiper-slide
+            .modal__slider-item-title Ключевые правила безопасности
+            img.modal__slider-item-img(src='assets/images/rules_img.jpg' alt='')
+          .modal__slider-item.swiper-slide
+            .modal__slider-item-title Ключевые правила безопасности
+            img.modal__slider-item-img(src='assets/images/rules_img.jpg' alt='')
         .swiper-nav
-          .swiper-nav__btn.swiper-nav__btn-prev На лево
-          .swiper-nav__btn.swiper-nav__btn-next На право
+          button.swiper-nav__btn.swiper-nav__btn-prev
+            +icon-mono('slider-arrow-left')
+          button.swiper-nav__btn.swiper-nav__btn-next
+            +icon-mono('slider-arrow-left')
