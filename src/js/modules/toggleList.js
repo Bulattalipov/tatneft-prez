@@ -6,9 +6,11 @@ export default function() {
 
   buttonOpen.addEventListener('click', function() {
     blockRules.style.zIndex = "3";
+    document.querySelector('.intro').style.height = '100vh';
   });
 
   buttonReturn.addEventListener('click', function() {
     blockRules.style.zIndex = "-1";
+    document.querySelector('.intro').style.height = 'auto';
   })
 }

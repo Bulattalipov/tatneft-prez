@@ -39,34 +39,36 @@
     position: absolute;
     z-index: 3;
     top: 2rem;
-    right: 32rem;
+    right: 24.6rem;
+    width: 4.8rem;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(98, 176, 198, 0.65);
+    border: 1px solid #fff;
+    border-radius: 50%;
     cursor: pointer;
+    transition: background var(--transition);
 
     &:hover {
-      svg {
-        fill: rgba(98, 176, 198, 0.86);
-      }
+      background-color: rgba(98, 176, 198, 0.86);
     }
 
     &:active,
     &:focus {
-      svg {
-        fill: #4b9bb2;
-      }
+      background-color: #4b9bb2;
     }
 
     &[disabled=''] {
-      svg {
-        fill: #c9cdd2;
-      }
+      background-color: #c9cdd2;
     }
 
     svg {
-      width: 4.8rem;
-      height: 4.8rem;
-      fill: rgba(98, 176, 198, 0.65);
-      border: 1px solid #fff;
-      border-radius: 50%;
+      width: 2.9rem;
+      height: 2.9rem;
+      stroke: #fff;
+      stroke-width: 3px;
     }
   }
 
