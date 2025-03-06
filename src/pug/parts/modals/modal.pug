@@ -1,6 +1,6 @@
 -
   imgItems = [
-    {imgUrl: 'assets/images/rules/1.png', text: 'ключевые правила безопасности'},
+    {imgUrl: 'assets/images/rules/1.png', text: 'Ключевые правила безопасности'},
     {imgUrl: 'assets/images/rules/2.png', text: 'Сокрытие информации о ЧП'},
     {imgUrl: 'assets/images/rules/3.png', text: 'Работы повышенной опасности без наряда-допуска'},
     {imgUrl: 'assets/images/rules/4.png', text: 'Нарушение целостности блокировок, противоаварийной автоматической защиты'},
@@ -20,6 +20,9 @@
             .modal__slider-item.swiper-slide
               .modal__slider-item-box
                 .modal__slider-item-title=item.text
+                a.modal__slider-item-btn-download(href='#' download)
+                  +icon-mono('download')(class='modal__slider-item-btn-download-icon')
+                  .modal__slider-item-btn-download-text скачать
                 button.button-reset.modal__close-btn.modal-close(type="button")
                   +icon-mono('modal-close')
               .modal__slider-item-img
