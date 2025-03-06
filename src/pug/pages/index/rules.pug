@@ -1,3 +1,16 @@
+-
+  rulesItems = [
+    {imgUrl: 'assets/images/rules/1.png', text: 'ключевые правила безопасности'},
+    {imgUrl: 'assets/images/rules/2.png', text: 'Сокрытие информации о ЧП'},
+    {imgUrl: 'assets/images/rules/3.png', text: 'Работы повышенной опасности без наряда-допуска'},
+    {imgUrl: 'assets/images/rules/4.png', text: 'Нарушение целостности блокировок, противоаварийной автоматической защиты'},
+    {imgUrl: 'assets/images/rules/5.png', text: 'Употребление алкогольных, наркотических и токсических веществ'},
+    {imgUrl: 'assets/images/rules/6.png', text: 'Курение и открытый огонь'},
+    {imgUrl: 'assets/images/rules/7.png', text: 'Ремень безопасности на транспорте'},
+    {imgUrl: 'assets/images/rules/8.png', text: 'Нахождение и перемещение в запрещённых зонах'},
+    {imgUrl: 'assets/images/rules/9.png', text: 'Отсутствие СИЗ'},
+  ]
+
 .rules
   .site-container
     button.rules__return
@@ -5,10 +18,10 @@
       .rules__return-text назад
     .rules__title Видео о ключевых правилах безопасности
     ul.rules__items
-      each item in Array.from(Array(9).keys())
+      each item in rulesItems
         li.rules__item
-          img.rules__item-img(src='assets/images/rules_img.jpg' alt='#')
-          h3.rules__item-title Ключевые правила безопасности
+          img.rules__item-img(src=item.imgUrl alt='#')
+          h3.rules__item-title=item.text
           .rules__item-buttons
             button.rules__item-button(data-path="modal-video")
               .rules__item-button-text Видео

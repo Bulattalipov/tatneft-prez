@@ -12,7 +12,7 @@ export default function () {
         translate: ["100%", 0, 0],
       },
       next: {
-        translate: [0, 0, -400],
+        translate: [0, 0, -2],
       },
     },
     rtl: true,
@@ -20,6 +20,9 @@ export default function () {
     speed: 500,
     slidesPerView: 1,
     spaceBetween: 30,
+    touchMove: false,
+    simulateTouch: false,
+    noSwiping: false,
     autoplay: {
       delay: 2500, // Задержка между слайдами в миллисекундах
       disableOnInteraction: false, // Не отключать автопроигрывание при взаимодействии

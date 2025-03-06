@@ -1,26 +1,29 @@
+-
+  imgItems = [
+    {imgUrl: 'assets/images/rules/1.png', text: 'ключевые правила безопасности'},
+    {imgUrl: 'assets/images/rules/2.png', text: 'Сокрытие информации о ЧП'},
+    {imgUrl: 'assets/images/rules/3.png', text: 'Работы повышенной опасности без наряда-допуска'},
+    {imgUrl: 'assets/images/rules/4.png', text: 'Нарушение целостности блокировок, противоаварийной автоматической защиты'},
+    {imgUrl: 'assets/images/rules/5.png', text: 'Употребление алкогольных, наркотических и токсических веществ'},
+    {imgUrl: 'assets/images/rules/6.png', text: 'Курение и открытый огонь'},
+    {imgUrl: 'assets/images/rules/7.png', text: 'Ремень безопасности на транспорте'},
+    {imgUrl: 'assets/images/rules/8.png', text: 'Нахождение и перемещение в запрещённых зонах'},
+    {imgUrl: 'assets/images/rules/9.png', text: 'Отсутствие СИЗ'},
+  ]
+
 .modal__container(data-target="modal-images")
   .modal__content
     .modal__legend
       .modal__slider.swiper
         .swiper-wrapper
-          .modal__slider-item.swiper-slide
-            .modal__slider-item-box
-              .modal__slider-item-title Ключевые правила безопасности
-              button.button-reset.modal__close-btn.modal-close(type="button")
-                +icon-mono('modal-close')
-            img.modal__slider-item-img(src='assets/images/rules_img.jpg' alt='')
-          .modal__slider-item.swiper-slide
-            .modal__slider-item-box
-              .modal__slider-item-title Ключевые правила безопасности
-              button.button-reset.modal__close-btn.modal-close(type="button")
-                +icon-mono('modal-close')
-            img.modal__slider-item-img(src='assets/images/rules_img.jpg' alt='')
-          .modal__slider-item.swiper-slide
-            .modal__slider-item-box
-              .modal__slider-item-title Ключевые правила безопасности
-              button.button-reset.modal__close-btn.modal-close(type="button")
-                +icon-mono('modal-close')
-            img.modal__slider-item-img(src='assets/images/rules_img.jpg' alt='')
+          each item in imgItems
+            .modal__slider-item.swiper-slide
+              .modal__slider-item-box
+                .modal__slider-item-title=item.text
+                button.button-reset.modal__close-btn.modal-close(type="button")
+                  +icon-mono('modal-close')
+              .modal__slider-item-img
+                img.modal__slider-item-img-elem(src=item.imgUrl alt='')
         .swiper-nav
           button.swiper-nav__btn.swiper-nav__btn-prev
             +icon-mono('slider-arrow-left')
@@ -36,15 +39,28 @@
               .modal__slider-item-title Ключевые правила безопасности
               button.button-reset.modal__close-btn.modal-close(type="button")
                 +icon-mono('modal-close')
-            video.modal__slider-item-video(controls preload="auto" width="100%" height="100%" data-setup="{}")
-              source(src='media/flowers.mp4')
+            .modal__slider-item-video
+              video.modal__slider-item-video-elem(controls width="100%" height="100%")
+                source(src='media/flowers.mp4')
           .modal__slider-item.swiper-slide
             .modal__slider-item-box
               .modal__slider-item-title Ключевые правила безопасности
               button.button-reset.modal__close-btn.modal-close(type="button")
                 +icon-mono('modal-close')
-            video.modal__slider-item-video(autoplay muted)
-              source(src='media/flowers.mp4')
+            .modal__slider-item-video
+              iframe(src="https://kinescope.io/embed/5id2Fe67J7ZSWGAubUwpFR",
+                    allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;",
+                    frameborder="0",
+                    allowfullscreen,
+                    style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;")
+          .modal__slider-item.swiper-slide
+            .modal__slider-item-box
+              .modal__slider-item-title Ключевые правила безопасности
+              button.button-reset.modal__close-btn.modal-close(type="button")
+                +icon-mono('modal-close')
+            .modal__slider-item-video
+              video.modal__slider-item-video-elem(controls width="100%" height="100%")
+                source(src='media/flowers.mp4')
         .swiper-nav
           button.swiper-nav__btn.swiper-nav__btn-prev
             +icon-mono('slider-arrow-left')
