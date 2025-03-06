@@ -43,8 +43,10 @@
               button.button-reset.modal__close-btn.modal-close(type="button")
                 +icon-mono('modal-close')
             .modal__slider-item-video
-              video.modal__slider-item-video-elem(controls width="100%" height="100%")
+              video.modal__slider-item-video-elem(width="100%" height="100%")
                 source(src='media/flowers.mp4')
+              .modal__slider-item-video-play
+                +icon-mono('video-play')
           .modal__slider-item.swiper-slide
             .modal__slider-item-box
               .modal__slider-item-title Ключевые правила безопасности
@@ -62,8 +64,10 @@
               button.button-reset.modal__close-btn.modal-close(type="button")
                 +icon-mono('modal-close')
             .modal__slider-item-video
-              video.modal__slider-item-video-elem(controls width="100%" height="100%")
+              video.modal__slider-item-video-elem(width="100%" height="100%")
                 source(src='media/flowers.mp4')
+              .modal__slider-item-video-play
+                +icon-mono('video-play')
         .swiper-nav
           button.swiper-nav__btn.swiper-nav__btn-prev
             +icon-mono('slider-arrow-left')
