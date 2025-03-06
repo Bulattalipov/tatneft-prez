@@ -36,10 +36,6 @@
   }
 
   &__close-btn {
-    position: absolute;
-    z-index: 3;
-    top: 2rem;
-    right: 24.6rem;
     width: 4.8rem;
     height: 4.8rem;
     display: flex;
@@ -72,24 +68,34 @@
     }
   }
 
+  &__legend {
+
+  }
+
   &__slider {
-    width: 160rem;
+    width: 153rem;
     overflow: visible;
 
     &-item {
       width: 90rem;
       height: 100%;
 
+      &-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+
       &-img {
         object-fit: cover;
-        height: 86%;
         border: 1px solid #fff;
         border-radius: 2.4rem;
       }
 
       &-video {
+        width: 80rem;
+        height: 80%;
         object-fit: cover;
-        height: 86%;
         border: 1px solid #fff;
         border-radius: 2.4rem;
       }

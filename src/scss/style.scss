@@ -1,6 +1,6 @@
 /* stylelint-disable no-invalid-position-at-import-rule */
 :root {
-  --index: calc(1vh + 1vw);
+  --index: calc(1vh);
   /* typography  */
   --font-family: "Pragmatica", sans-serif;
   --second-family: "Inter", sans-serif;
@@ -17,6 +17,9 @@
 
   /* etc */
   --transition: 200ms ease-in;
+
+  --animate-delay: 0.4s;
+
 }
 
 @import "./helpers/**/*";

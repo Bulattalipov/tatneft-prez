@@ -7,6 +7,7 @@ import introSlider from './modules/introSlider';
 import toggleList from './modules/toggleList';
 import modalSlider from './modules/modalSlider';
 import audioPlay from './modules/audioPlay';
+import videoPlayer from './modules/videoPlayer';
 
 documenReady(() => {
   window.___YOUR_PROJECT___API = {};
@@ -17,4 +18,5 @@ documenReady(() => {
   toggleList();
   modalSlider();
   audioPlay();
+  videoPlayer();
 });

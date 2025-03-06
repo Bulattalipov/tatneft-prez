@@ -4,15 +4,15 @@
       img.intro__logo(src='assets/images/logo-tatneft.svg' alt='Логотип Татнефть')
       h1.intro__title Ключевые правила безопасности
       .intro__text
-        .intro__text-one #[span Призываем] Вас к #[span ответственному]
-        .intro__text-two отношению к #[span безопасности]
-        .intro__text-three и своему #[span здоровью!]
+        .intro__text-one.animate__animated.animate__fadeInLeft #[span Призываем] Вас к #[span ответственному]
+        .intro__text-two.animate__animated.animate__fadeInLeft.animate__delay-1s отношению к #[span безопасности]
+        .intro__text-three.animate__animated.animate__fadeInLeft.animate__delay-2s и своему #[span здоровью!]
       button.intro__button изучить ключевые правила безопасности
       .intro__box
-        .intro__box-sound
+        .intro__box-sound.intro__box-sound--dull
           img.intro__box-sound-img.intro__box-sound-img-1(src='assets/images/Simplification.svg' alt='Звук')
           img.intro__box-sound-img.intro__box-sound-img-2(src='assets/images/Simplification2.svg' alt='Звук')
-        audio(class="intro__box-audio")(src="assets/cosmos.mp3" loop)
+        audio(class="intro__box-audio")(src="media/cosmos.mp3" loop)
         button.intro__box-close ЗАКРЫТЬ
   .intro__slider.swiper
     .swiper-wrapper
