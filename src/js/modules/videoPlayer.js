@@ -12,12 +12,14 @@ export default function() {
   if(videoBlocks.length === 0) return;
 
   videoBlocks.forEach(videoBlock => {
-    const videoElem = videoBlock.querySelector('.modal__slider-item-video-elem');
-    const btn = videoBlock.querySelector('.modal__slider-item-video-play');
-    btn.addEventListener('click', function() {
-      this.style.display = 'none';
-      videoElem.setAttribute('controls', true);
-      videoElem.play();
-    });
+    if(videoBlock.querySelector('.modal__slider-item-video-elem')) {
+      const videoElem = videoBlock.querySelector('.modal__slider-item-video-elem');
+      const btn = videoBlock.querySelector('.modal__slider-item-video-play');
+      btn.addEventListener('click', function() {
+        this.style.display = 'none';
+        videoElem.setAttribute('controls', true);
+        videoElem.play();
+      });
+    }
   })
 }

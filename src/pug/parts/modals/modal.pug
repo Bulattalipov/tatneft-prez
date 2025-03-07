@@ -1,14 +1,14 @@
 -
   imgItems = [
-    {imgUrl: 'assets/images/rules/1.png', text: 'Ключевые правила безопасности'},
-    {imgUrl: 'assets/images/rules/2.png', text: 'Сокрытие информации о ЧП'},
-    {imgUrl: 'assets/images/rules/3.png', text: 'Работы повышенной опасности без наряда-допуска'},
-    {imgUrl: 'assets/images/rules/4.png', text: 'Нарушение целостности блокировок, противоаварийной автоматической защиты'},
-    {imgUrl: 'assets/images/rules/5.png', text: 'Употребление алкогольных, наркотических и токсических веществ'},
-    {imgUrl: 'assets/images/rules/6.png', text: 'Курение и открытый огонь'},
-    {imgUrl: 'assets/images/rules/7.png', text: 'Ремень безопасности на транспорте'},
-    {imgUrl: 'assets/images/rules/8.png', text: 'Нахождение и перемещение в запрещённых зонах'},
-    {imgUrl: 'assets/images/rules/9.png', text: 'Отсутствие СИЗ'},
+    {imgUrl: 'assets/images/modalImages/Плакат №1.jpg', text: 'Общие сведения о ключевых правилах безопасности'},
+    {imgUrl: 'assets/images/modalImages/Плакат №2.jpg', text: 'Сокрытие информации об авариях и происшествиях'},
+    {imgUrl: 'assets/images/modalImages/Плакат №3.jpg', text: 'Проведение работ повышенной опасности без наряда-допуска'},
+    {imgUrl: 'assets/images/modalImages/Плакат №4.jpg', text: 'Отключение или нарушение целостности блокировок и противоаварийной автоматической защиты'},
+    {imgUrl: 'assets/images/modalImages/Плакат №5.jpg', text: 'Алкогольное, наркотическое или иное токсическое опьянение'},
+    {imgUrl: 'assets/images/modalImages/Плакат №6.jpg', text: 'Курение и использование открытого огня'},
+    {imgUrl: 'assets/images/modalImages/Плакат №7.jpg', text: 'Неприменение ремня безопасности на транспорте'},
+    {imgUrl: 'assets/images/modalImages/Плакат №8.jpg', text: 'Передвижение, переход и нахождение в запретных зонах'},
+    {imgUrl: 'assets/images/modalImages/Плакат №9.jpg', text: 'Неприменение средств индивидуальной защиты (СИЗ)'},
   ]
 
 .modal__container(data-target="modal-images")
@@ -37,37 +37,79 @@
     .modal__legend
       .modal__slider.swiper
         .swiper-wrapper
+          //- .modal__slider-item.swiper-slide
+          //-   .modal__slider-item-box
+          //-     .modal__slider-item-title Ключевые правила безопасности
+          //-     button.button-reset.modal__close-btn.modal-close(type="button")
+          //-       +icon-mono('modal-close')
+          //-   .modal__slider-item-video
+          //-     video.modal__slider-item-video-elem(controls width="100%" height="100%")
+          //-       source(src='media/flowers.mp4')
+          //-     .modal__slider-item-video-play
+          //-       +icon-mono('video-play')
           .modal__slider-item.swiper-slide
             .modal__slider-item-box
-              .modal__slider-item-title Ключевые правила безопасности
+              .modal__slider-item-title Общие сведения о ключевых правилах безопасности
               button.button-reset.modal__close-btn.modal-close(type="button")
                 +icon-mono('modal-close')
             .modal__slider-item-video
-              video.modal__slider-item-video-elem(width="100%" height="100%")
-                source(src='media/flowers.mp4')
-              .modal__slider-item-video-play
-                +icon-mono('video-play')
+              iframe(src='https://kinescope.io/embed/g7VwAZTf8Yai5TjfpH2oVw' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
           .modal__slider-item.swiper-slide
             .modal__slider-item-box
-              .modal__slider-item-title Ключевые правила безопасности
+              .modal__slider-item-title Сокрытие информации об авариях и происшествиях
               button.button-reset.modal__close-btn.modal-close(type="button")
                 +icon-mono('modal-close')
             .modal__slider-item-video
-              iframe(src="https://kinescope.io/embed/5id2Fe67J7ZSWGAubUwpFR",
-                    allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;",
-                    frameborder="0",
-                    allowfullscreen,
-                    style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;")
+              iframe(src='https://kinescope.io/embed/3LSV7rx5xVM54wy15RR5M8' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
           .modal__slider-item.swiper-slide
             .modal__slider-item-box
-              .modal__slider-item-title Ключевые правила безопасности
+              .modal__slider-item-title Проведение работ повышенной опасности без наряда-допуска
               button.button-reset.modal__close-btn.modal-close(type="button")
                 +icon-mono('modal-close')
             .modal__slider-item-video
-              video.modal__slider-item-video-elem(width="100%" height="100%")
-                source(src='media/flowers.mp4')
-              .modal__slider-item-video-play
-                +icon-mono('video-play')
+              iframe(src='https://kinescope.io/embed/8Rqc38JPLLnhFyh7UvvHDR' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
+          .modal__slider-item.swiper-slide
+            .modal__slider-item-box
+              .modal__slider-item-title Отключение или нарушение целостности блокировок и противоаварийной автоматической защиты
+              button.button-reset.modal__close-btn.modal-close(type="button")
+                +icon-mono('modal-close')
+            .modal__slider-item-video
+              iframe(src='https://kinescope.io/embed/7fphY6hBZdt5YzwWo6NWP7' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
+          .modal__slider-item.swiper-slide
+            .modal__slider-item-box
+              .modal__slider-item-title Алкогольное, наркотическое или иное токсическое опьянение
+              button.button-reset.modal__close-btn.modal-close(type="button")
+                +icon-mono('modal-close')
+            .modal__slider-item-video
+              iframe(src='https://kinescope.io/embed/omT7yza7Futdyj1AcqDnUh' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
+          .modal__slider-item.swiper-slide
+            .modal__slider-item-box
+              .modal__slider-item-title Курение и использование открытого огня
+              button.button-reset.modal__close-btn.modal-close(type="button")
+                +icon-mono('modal-close')
+            .modal__slider-item-video
+              iframe(src='https://kinescope.io/embed/quVtCnKM3VCz59niHneZjP' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
+          .modal__slider-item.swiper-slide
+            .modal__slider-item-box
+              .modal__slider-item-title Неприменение ремня безопасности на транспорте
+              button.button-reset.modal__close-btn.modal-close(type="button")
+                +icon-mono('modal-close')
+            .modal__slider-item-video
+              iframe(src='https://kinescope.io/embed/bmoHxePC8eJQvXXUUmFQA9' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
+          .modal__slider-item.swiper-slide
+            .modal__slider-item-box
+              .modal__slider-item-title Передвижение, переход и нахождение в запретных зонах
+              button.button-reset.modal__close-btn.modal-close(type="button")
+                +icon-mono('modal-close')
+            .modal__slider-item-video
+              iframe(src='https://kinescope.io/embed/3WXbbTdNHm7ucWMzxojgDA' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
+          .modal__slider-item.swiper-slide
+            .modal__slider-item-box
+              .modal__slider-item-title Неприменение средств индивидуальной защиты (СИЗ)
+              button.button-reset.modal__close-btn.modal-close(type="button")
+                +icon-mono('modal-close')
+            .modal__slider-item-video
+              iframe(src='https://kinescope.io/embed/jk9rmb6RuskcntgC9NSQWN' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
         .swiper-nav
           button.swiper-nav__btn.swiper-nav__btn-prev
             +icon-mono('slider-arrow-left')
