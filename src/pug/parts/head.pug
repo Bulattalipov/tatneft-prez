@@ -1,4 +1,4 @@
-- const siteTitle = pageTitle ? `${pageTitle} | ${siteName}` : siteName
+- const siteTitle = pageTitle ? `${pageTitle} ${siteName}` : siteName
 
 
 meta(charset="UTF-8")
@@ -18,5 +18,40 @@ meta(name="theme-color" content="#ffffff")
 title= siteTitle
 
 link(rel="stylesheet" href="assets/css/style.min.css?v=" + siteVersion)
-script(src="https://vjs.zencdn.net/7.17.0/video.min.js")
+script.
+  let linksVideo = ["https://kinescope.io/embed/g7VwAZTf8Yai5TjfpH2oVw?autopause=1", "https://kinescope.io/embed/3LSV7rx5xVM54wy15RR5M8?autopause=1", "https://kinescope.io/embed/8Rqc38JPLLnhFyh7UvvHDR?autopause=1", "https://kinescope.io/embed/7fphY6hBZdt5YzwWo6NWP7?autopause=1", "https://kinescope.io/embed/omT7yza7Futdyj1AcqDnUh?autopause=1", "https://kinescope.io/embed/quVtCnKM3VCz59niHneZjP?autopause=1", "https://kinescope.io/embed/bmoHxePC8eJQvXXUUmFQA9?autopause=1", "https://kinescope.io/embed/3WXbbTdNHm7ucWMzxojgDA?autopause=1", "https://kinescope.io/embed/jk9rmb6RuskcntgC9NSQWN?autopause=1"];
+//- script.
+//-     var tag = document.createElement('script');
+//-       tag.src = 'https://player.kinescope.io/latest/iframe.player.js';
+//-       var firstScriptTag = document.getElementsByTagName('script')[0];
+//-       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+//-       window.arrayCopiesVideo = [];
+
+//-       // 3. Эта функция создаст <iframe> (и Kinescope Player).
+//-       //    Она будет вызвана автоматически когда скрипт API будет загружен.
+//-       function onKinescopeIframeAPIReady(playerFactory) {
+//-         linksVideo.forEach((linkVideo, i) => {
+//-           const copiesViseo = playerFactory
+//-             .create(`player-${i + 1}`, {
+//-               url: linkVideo,
+//-               size: { width: '50%', height: 400 },
+//-             })
+//-             .then(function (player) {
+//-               player
+//-                 // 4. Этот обработчик будет вызван когда плеер загрузит необходимые данные для воспроизведения.
+//-                 .once(player.Events.Ready, function (event) {
+//-                   event.target.setVolume(0.5);
+//-                 })
+//-                 // 5. Этот обработчик будет вызван когда начнется воспроизведение.
+//-                 //    Плеер проиграет 5 сек. и затем должен остановиться.
+//-                 .on(player.Events.Playing, function (event) {
+//-                   setTimeout(function () {
+//-                     event.target.pause();
+//-                   }, 5000);
+//-                 });
+//-             });
+//-         window.arrayCopiesVideo.push(copiesViseo);
+//-         })
+//-         console.log(window.arrayCopiesVideo);
+//-       }

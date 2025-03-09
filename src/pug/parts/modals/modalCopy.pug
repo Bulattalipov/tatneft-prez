@@ -1,0 +1,118 @@
+-
+  imgItems = [
+    {imgUrl: 'assets/images/modalImages/Плакат №1.jpg', text: 'Общие сведения о ключевых правилах безопасности'},
+    {imgUrl: 'assets/images/modalImages/Плакат №2.jpg', text: 'Сокрытие информации об авариях и происшествиях'},
+    {imgUrl: 'assets/images/modalImages/Плакат №3.jpg', text: 'Проведение работ повышенной опасности без наряда-допуска'},
+    {imgUrl: 'assets/images/modalImages/Плакат №4.jpg', text: 'Отключение целостности блокировок и противоаварийной защиты'},
+    {imgUrl: 'assets/images/modalImages/Плакат №5.jpg', text: 'Алкогольное, наркотическое или иное токсическое опьянение'},
+    {imgUrl: 'assets/images/modalImages/Плакат №6.jpg', text: 'Курение и использование открытого огня'},
+    {imgUrl: 'assets/images/modalImages/Плакат №7.jpg', text: 'Неприменение ремня безопасности на транспорте'},
+    {imgUrl: 'assets/images/modalImages/Плакат №8.jpg', text: 'Передвижение, переход и нахождение в запретных зонах'},
+    {imgUrl: 'assets/images/modalImages/Плакат №9.jpg', text: 'Неприменение средств индивидуальной защиты (СИЗ)'},
+  ]
+
+.modal__container(data-target="modal-images")
+  .modal__content
+    .modal__legend
+      .modal__slider.swiper
+        .swiper-wrapper
+          each item in imgItems
+            .modal__slider-item.swiper-slide
+              .modal__slider-item-box
+                .modal__slider-item-title=item.text
+                a.modal__slider-item-btn-download(href=item.imgUrl download)
+                  +icon-mono('download')(class='modal__slider-item-btn-download-icon')
+                  .modal__slider-item-btn-download-text скачать
+                button.button-reset.modal__close-btn.modal-close(type="button")
+                  +icon-mono('modal-close')
+              .modal__slider-item-img
+                img.modal__slider-item-img-elem(src=item.imgUrl alt='')
+        .swiper-nav
+          button.swiper-nav__btn.swiper-nav__btn-prev
+            +icon-mono('slider-arrow-left')
+          button.swiper-nav__btn.swiper-nav__btn-next
+            +icon-mono('slider-arrow-left')
+.modal__container(data-target="modal-video")
+  .modal__content
+    .modal__legend
+      .modal__slider.swiper
+        .swiper-wrapper
+          //- .modal__slider-item.swiper-slide
+          //-   .modal__slider-item-box
+          //-     .modal__slider-item-title Ключевые правила безопасности
+          //-     button.button-reset.modal__close-btn.modal-close(type="button")
+          //-       +icon-mono('modal-close')
+          //-   .modal__slider-item-video
+          //-     video.modal__slider-item-video-elem(controls width="100%" height="100%")
+          //-       source(src='media/flowers.mp4')
+          //-     .modal__slider-item-video-play
+          //-       +icon-mono('video-play')
+          .modal__slider-item.swiper-slide
+            div(id="player")
+          //-   .modal__slider-item-box
+          //-     .modal__slider-item-title Общие сведения о ключевых правилах безопасности
+          //-     button.button-reset.modal__close-btn.modal-close(type="button")
+          //-       +icon-mono('modal-close')
+          //-   .modal__slider-item-video.loading
+          //-     iframe(src='https://kinescope.io/embed/g7VwAZTf8Yai5TjfpH2oVw?autopause=1&preload=0' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
+          //- .modal__slider-item.swiper-slide
+          //-   .modal__slider-item-box
+          //-     .modal__slider-item-title Сокрытие информации об авариях и происшествиях
+          //-     button.button-reset.modal__close-btn.modal-close(type="button")
+          //-       +icon-mono('modal-close')
+          //-   .modal__slider-item-video.loading
+          //-     iframe(src='https://kinescope.io/embed/3LSV7rx5xVM54wy15RR5M8?autopause=1&preload=0' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
+          //- .modal__slider-item.swiper-slide
+          //-   .modal__slider-item-box
+          //-     .modal__slider-item-title Проведение работ повышенной опасности без наряда-допуска
+          //-     button.button-reset.modal__close-btn.modal-close(type="button")
+          //-       +icon-mono('modal-close')
+          //-   .modal__slider-item-video.loading
+          //-     iframe(src='https://kinescope.io/embed/8Rqc38JPLLnhFyh7UvvHDR?autopause=1&preload=0' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
+          //- .modal__slider-item.swiper-slide
+          //-   .modal__slider-item-box
+          //-     .modal__slider-item-title Отключение целостности блокировок и противоаварийной защиты
+          //-     button.button-reset.modal__close-btn.modal-close(type="button")
+          //-       +icon-mono('modal-close')
+          //-   .modal__slider-item-video.loading
+          //-     iframe(src='https://kinescope.io/embed/7fphY6hBZdt5YzwWo6NWP7?autopause=1&preload=0' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
+          //- .modal__slider-item.swiper-slide
+          //-   .modal__slider-item-box
+          //-     .modal__slider-item-title Алкогольное, наркотическое или иное токсическое опьянение
+          //-     button.button-reset.modal__close-btn.modal-close(type="button")
+          //-       +icon-mono('modal-close')
+          //-   .modal__slider-item-video.loading
+          //-     iframe(src='https://kinescope.io/embed/omT7yza7Futdyj1AcqDnUh?autopause=1&preload=0' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
+          //- .modal__slider-item.swiper-slide
+          //-   .modal__slider-item-box
+          //-     .modal__slider-item-title Курение и использование открытого огня
+          //-     button.button-reset.modal__close-btn.modal-close(type="button")
+          //-       +icon-mono('modal-close')
+          //-   .modal__slider-item-video.loading
+          //-     iframe(src='https://kinescope.io/embed/quVtCnKM3VCz59niHneZjP?autopause=1&preload=0' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
+          //- .modal__slider-item.swiper-slide
+          //-   .modal__slider-item-box
+          //-     .modal__slider-item-title Неприменение ремня безопасности на транспорте
+          //-     button.button-reset.modal__close-btn.modal-close(type="button")
+          //-       +icon-mono('modal-close')
+          //-   .modal__slider-item-video.loading
+          //-     iframe(src='https://kinescope.io/embed/bmoHxePC8eJQvXXUUmFQA9?autopause=1&preload=0' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
+          //- .modal__slider-item.swiper-slide
+          //-   .modal__slider-item-box
+          //-     .modal__slider-item-title Передвижение, переход и нахождение в запретных зонах
+          //-     button.button-reset.modal__close-btn.modal-close(type="button")
+          //-       +icon-mono('modal-close')
+          //-   .modal__slider-item-video.loading
+          //-     iframe(src='https://kinescope.io/embed/3WXbbTdNHm7ucWMzxojgDA?autopause=1&preload=0' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
+          //- .modal__slider-item.swiper-slide
+          //-   .modal__slider-item-box
+          //-     .modal__slider-item-title Неприменение средств индивидуальной защиты (СИЗ)
+          //-     button.button-reset.modal__close-btn.modal-close(type="button")
+          //-       +icon-mono('modal-close')
+          //-   .modal__slider-item-video.loading
+          //-     iframe(src='https://kinescope.io/embed/jk9rmb6RuskcntgC9NSQWN?autopause=1&preload=0' allow='autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;' frameborder='0' allowfullscreen='' style='position: absolute; width: 100%; height: 100%; top: 0; left: 0;')
+        .swiper-nav
+          button.swiper-nav__btn.swiper-nav__btn-prev
+            +icon-mono('slider-arrow-left')
+          button.swiper-nav__btn.swiper-nav__btn-next
+            +icon-mono('slider-arrow-left')

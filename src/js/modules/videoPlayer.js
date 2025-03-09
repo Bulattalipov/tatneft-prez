@@ -7,19 +7,19 @@ export default function() {
   //     preload: 'auto'
   // });
 
-  const videoBlocks = document.querySelectorAll('.modal__slider-item-video');
+  // const videoBlocks = document.querySelectorAll('.modal__slider-item-video');
 
-  if(videoBlocks.length === 0) return;
+  // if(videoBlocks.length === 0) return;
 
-  videoBlocks.forEach(videoBlock => {
-    if(videoBlock.querySelector('.modal__slider-item-video-elem')) {
-      const videoElem = videoBlock.querySelector('.modal__slider-item-video-elem');
-      const btn = videoBlock.querySelector('.modal__slider-item-video-play');
-      btn.addEventListener('click', function() {
-        this.style.display = 'none';
-        videoElem.setAttribute('controls', true);
-        videoElem.play();
-      });
-    }
-  })
+  // videoBlocks.forEach(videoBlock => {
+  //   if(videoBlock.querySelector('.modal__slider-item-video-elem')) {
+  //     const videoElem = videoBlock.querySelector('.modal__slider-item-video-elem');
+  //     const btn = videoBlock.querySelector('.modal__slider-item-video-play');
+  //     btn.addEventListener('click', function() {
+  //       this.style.display = 'none';
+  //       videoElem.setAttribute('controls', true);
+  //       videoElem.play();
+  //     });
+  //   }
+  // })
 }

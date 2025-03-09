@@ -8,6 +8,7 @@ import toggleList from './modules/toggleList';
 import modalSlider from './modules/modalSlider';
 import audioPlay from './modules/audioPlay';
 import videoPlayer from './modules/videoPlayer';
+import updateVideo from './modules/updateVideo';
 
 documenReady(() => {
   window.___YOUR_PROJECT___API = {};
@@ -19,4 +20,5 @@ documenReady(() => {
   modalSlider();
   audioPlay();
   videoPlayer();
+  updateVideo();
 });

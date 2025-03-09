@@ -19,6 +19,8 @@ export default function () {
       speed: 500,
       spaceBetween: 30,
       // autoHeight: true,
+      scrollOnFocus: true,
+      watchSlidesProgress: true,
       navigation: {
         nextEl: slider.querySelector('.swiper-nav__btn-next'),
         prevEl: slider.querySelector('.swiper-nav__btn-prev')
@@ -26,30 +28,36 @@ export default function () {
     });
 
     window.copiesSliderArray.push(copiesSlider)
+
+    // document.addEventListener('visibilitychange', function() {
+    //   if (document.visibilityState === 'hidden') {
+    //       copiesSlider.autoplay.stop();
+    //       console.log('Автопроигрывание остановлено');
+    //   } else {
+    //       copiesSlider.autoplay.start();
+    //   }
+    // });
   })
 
 
 
-  // const rulesItems = document.querySelector('.rules__items');
-  // if(!rulesItems) return;
+  const rulesItems = document.querySelector('.rules__items');
+  if(!rulesItems) return;
 
-  // const rulesItemArray = document.querySelectorAll('.rules__item');
+  const rulesItemArray = document.querySelectorAll('.rules__item');
 
-  // rulesItemArray.forEach((rulesItem, i) => {
-  //   const btns = rulesItem.querySelectorAll('.rules__item-button');
-  //   btns.forEach(btn => {
-  //     btn.addEventListener('click', function() {
-  //       window.copiesSliderArray.forEach(slider => {
-  //         slider.slideTo(i);
-  //         console.log(slider.slideTo(i));
-  //       })
-  //     });
-  //   })
-  // })
+  rulesItemArray.forEach((rulesItem, i) => {
+
+    const btns = rulesItem.querySelectorAll('.rules__item-button');
+    btns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        setTimeout(() => {
+          window.copiesSliderArray.forEach(slider => {
+            slider.slideTo(i, 100, true);
+            console.log(slider.slideTo(i, 100, true));
+          })
+        }, 500);
+      });
+    })
+  })
 }
-
-
-// const iframeArray = document.querySelectorAll('.modal__slider-item-video iframe');
-// iframeArray.forEach(item => {
-//   item.src = item.src;
-// });

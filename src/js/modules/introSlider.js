@@ -22,7 +22,7 @@ export default function () {
     spaceBetween: 30,
     touchMove: false,
     simulateTouch: false,
-    noSwiping: false,
+    noSwiping: true,
     autoplay: {
       delay: 2500, // Задержка между слайдами в миллисекундах
       disableOnInteraction: false, // Не отключать автопроигрывание при взаимодействии

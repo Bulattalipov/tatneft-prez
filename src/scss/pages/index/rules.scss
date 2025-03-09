@@ -10,10 +10,16 @@
   background-color: var(--color-bg);
 
 
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+
   &__return {
     display: flex;
     gap: 1.6rem;
-    margin-bottom: 2.5rem;
 
     &-icon {
       width: 2.3rem;
@@ -32,7 +38,6 @@
     font-weight: 500;
     font-size: 3rem;
     color: #fff;
-    margin-bottom: 4rem;
   }
 
   &__items {

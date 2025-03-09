@@ -92,7 +92,7 @@
 		"animate.css": "4.1.1",
 		"choices.js": "10.2.0",
 		"reset-css": "^5.0.1",
-		"swiper": "8.4.4",
+		"swiper": "8.4.7",
 		"vanilla-lazyload": "^17.6.1"
 	}
 }

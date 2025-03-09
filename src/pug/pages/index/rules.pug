@@ -13,10 +13,12 @@
 
 .rules
   .site-container
-    button.rules__return
-      +icon-mono('arrow-right')(class='rules__return-icon')
-      .rules__return-text назад
-    .rules__title КЛЮЧЕВЫЕ ПРАВИЛА БЕЗОПАСНОСТИ «ТАТНЕФТЬ»
+    .rules__inner
+      .rules__title КЛЮЧЕВЫЕ ПРАВИЛА БЕЗОПАСНОСТИ «ТАТНЕФТЬ»
+      button.rules__return.button-reset.modal__close-btn
+        +icon-mono('modal-close')(class='rules__return-icon')
+        //- +icon-mono('arrow-right')(class='rules__return-icon')
+        //- .rules__return-text назад
     ul.rules__items
       each item in rulesItems
         li.rules__item
