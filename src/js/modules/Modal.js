@@ -52,10 +52,10 @@ export class Modal {
           }
         }
 
-        // if (e.keyCode == 9 && this.isOpen) {
-        //   this.focusCatch(e);
-        //   return;
-        // }
+        if (e.keyCode == 9 && this.isOpen) {
+          this.focusCatch(e);
+          return;
+        }
 
       }.bind(this));
 
@@ -105,15 +105,20 @@ export class Modal {
         mdl.classList.remove('is-open');
       })
 
-		let iframes = document.querySelectorAll("iframe");
-		iframes.forEach(ifr => {
-			ifr.setAttribute("src", ifr.getAttribute("src"));
-		});
+      if(this.modalContainer.querySelector('.swiper-slide-active iframe')) {
+        let ifr = this.modalContainer.querySelector('.swiper-slide-active iframe');
+        ifr.setAttribute("src", ifr.getAttribute("src"));
+      }
 
-    let videos = document.querySelectorAll("video");
-    videos.forEach(video => {
-      video.pause();
-    })
+      // let iframes = document.querySelectorAll("iframe");
+      // iframes.forEach(ifr => {
+      //   ifr.setAttribute("src", ifr.getAttribute("src"));
+      // });
+
+      let videos = document.querySelectorAll("video");
+      videos.forEach(video => {
+        video.pause();
+      })
 
 
       this.modalContainer.classList.remove('modal-open');
