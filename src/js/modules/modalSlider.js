@@ -53,10 +53,10 @@ export default function () {
       btn.addEventListener('click', function() {
         setTimeout(() => {
           window.copiesSliderArray.forEach(slider => {
-            slider.slideTo(i, 100, true);
-            console.log(slider.slideTo(i, 100, true));
+            slider.slideTo(i, 0, true);
+            console.log(slider.slideTo(i, 0, true));
           })
-        }, 500);
+        }, 400);
       });
     })
   })
