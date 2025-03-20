@@ -145,3 +145,63 @@
     }
   }
 }
+
+.c-Rotate {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  background: linear-gradient(119.25deg, #00427c -3.58%, #48337a 70.79%);
+  top: 0;
+  left: 0;
+  display: flex
+;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.c-Rotate-Background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // background-image: url(/assets/images/b7c97c2….png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.c-Rotate svg {
+  margin: 1rem 0 3rem 0;
+}
+
+.c-Rotate__text {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.25em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.c-Rotate__text--detail {
+  width: 300px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #fff;
+}
+
+
+@media (orientation: landscape) {
+  .c-Rotate {
+      display: none;
+  }
+}

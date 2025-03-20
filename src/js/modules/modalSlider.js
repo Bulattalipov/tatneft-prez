@@ -29,6 +29,13 @@ export default function () {
 
     window.copiesSliderArray.push(copiesSlider)
 
+    function onSlideChange() {
+      console.log('Слайд изменился на: ', copiesSlider.activeIndex);
+      // Ваш код здесь
+    }
+
+    copiesSlider.on('slideChange', onSlideChange);
+
     // document.addEventListener('visibilitychange', function() {
     //   if (document.visibilityState === 'hidden') {
     //       copiesSlider.autoplay.stop();
