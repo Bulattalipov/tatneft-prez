@@ -1,23 +1,28 @@
 import videojs from 'video.js';
 
 export default function() {
-  // const player = videojs('video-js', {
-  //     controls: true,
-  //     autoplay: false,
-  //     preload: 'auto'
-  // });
-
-  const videoBlocks = document.querySelectorAll('.modal__slider-item-video video');
-
-  if(videoBlocks.length === 0) return;
-
-  videoBlocks.forEach(video => {
-    video.addEventListener('play', () => {
-      videoBlocks.forEach(otherVideo => {
-            if (otherVideo !== video) {
-                otherVideo.pause(); // Останавливаем другие видео
-            }
-        });
+  const arrayVideo = document.querySelectorAll('.video-js');
+  if(arrayVideo.length === 0) return;
+  arrayVideo.forEach((videoItem, i) => {
+    const player = videojs(`video-js-${i+1}`, {
+        controls: true,
+        autoplay: false,
+        preload: 'auto'
     });
-});
+    console.log(player);
+  })
+
+
+  arrayVideo.forEach(player => {
+      const videoInstance = videojs(player);
+
+      videoInstance.on('play', () => {
+        arrayVideo.forEach(otherPlayer => {
+              const otherVideoInstance = videojs(otherPlayer);
+              if (otherPlayer !== player) {
+                  otherVideoInstance.pause();
+              }
+          });
+      });
+  });
 }

@@ -16,7 +16,7 @@ export default function () {
     const copiesSlider = new Swiper(slider, {
       // slidesPerView: "auto",
       centeredSlides: true,
-      speed: 500,
+      speed: 0,
       spaceBetween: 30,
       // autoHeight: true,
       scrollOnFocus: true,

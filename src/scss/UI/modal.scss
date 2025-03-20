@@ -34,7 +34,7 @@
 
       .modal__slider {
         opacity: 1;
-        transition: opacity 3.9s ease-in;
+        transition: opacity 2.4s ease-in;
       }
     }
   }
@@ -126,6 +126,14 @@
         padding-top: 29.6%;
 
         iframe {
+          position: absolute !important;
+          width: 100% !important;
+          height: 100% !important;
+          top: 0 !important;
+          left: 0 !important;
+        }
+
+        video {
           position: absolute !important;
           width: 100% !important;
           height: 100% !important;
